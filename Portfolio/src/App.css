@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background Gradient */
+  .containers {
+    height: 100vh;
+    background: rgb(9, 8, 9) !important;
+    background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important;
+  }
+  
+  /* Heading Style */
+  h1 {
+    color: black;
+    font-size: xx-large;
+  }
+  
+  /* Logo Style */
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff004c;
+    background-image: linear-gradient(45deg, #ff004c 4%, #ffa50a 44%, #1d367c 66%, #ff3300 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  .logo::first-letter {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  /* Navbar Style */
+  nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30rem;
+    padding: 3px;
+    margin: 2px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    padding: 8px 16px; /* Reduce top-bottom padding */
+  }
+  
+  .navbar-brand {
+    font-size: 1.6rem;
+    padding: 0; /* Remove extra padding */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Home Page Styling */
+  .name {
+    display: inline-flex;
+  }
+  
+  .name p {
+    padding: 1rem;
+    font-size: 4rem;
+    color: #ff004c;
+    background-image: linear-gradient(45deg, #ff004c 4%, #ffa50a 44%, #00ff00 66%, #ff3300 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6200f5;
+    background-image: linear-gradient(45deg, #6200f5 15%, #06fe0a 22%, #f50031 66%, #e05200 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .sub-container {
+    padding: 8rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+   
+  }
+  
+  .img img {
+    height: 400px;
+    width: 400px;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(14, 253, 253, 0.8); /* Darker border */
+    box-shadow: 10px 4px 10px rgba(0, 255, 251, 0.2),
+                10px 6px 20px rgba(70, 250, 247, 0.2),
+                10px 8px 40px rgba(35, 255, 251, 0.2),
+                inset 10px 5px 5px rgba(70, 250, 247, 0.6);
+                 
+  }
+  
+  .code-content {
+    color: white;
+    flex-wrap: wrap;
+    width: 30%;
+    font-size: 1.5rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .name p {
+
+      font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+  
+    .text {
+      font-size: 2.5rem; /* Adjust font size */
+    }
+  
+    .img img {
+        margin-top: 2rem;
+      height: 300px; /* Adjust image size */
+      width: 300px;
+    }
+  
+    .content {
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+       
+        
+
+    }
+  
+    .code-content {
+      width: 100%; /* Increase width for smaller screens */
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      text-align: center;
+
+
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .name p {
+      font-size: 2rem; /* Further reduce font size on very small screens */
+    }
+  
+    .text {
+      font-size: 2rem;
+    }
+  
+    .img img {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .code-content {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .Hire{
+    background-color: red;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color:white;
+  }
+  
