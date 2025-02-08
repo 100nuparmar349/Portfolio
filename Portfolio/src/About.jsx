@@ -42,10 +42,22 @@ const About=(()=>{
                 </div>
 
                 <div className="skills">
-                    <h1>java</h1>
+                <p type="p" class="btn">HTML5</p>
+                <p type="p" class="btn">Css</p>
+                <p type="p" class="btn">JavaScript</p>
+                <p type="p" class="btn">React</p>
+                <p type="p" class="btn">Node.js</p>
+                <p type="p" class="btn">Express.js</p>
+                <p type="p" class="btn">MongoDB</p>
+                <p type="p" class="btn">SQL</p>
+                <p type="p" class="btn">MySQL</p>
+                <p type="p" class="btn">C</p>
+                <p type="p" class="btn">CPP</p>
+                <p type="p" class="btn">Java</p>
                 </div>
 
              </div>
+
             </div>
         </div>
     )

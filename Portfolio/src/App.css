@@ -215,3 +215,44 @@ nav ul {
   background-position: right;
   color: red;
 }
+
+.skill-bar {
+  width: 100%;
+  height: 50px; /* Thoda zyada height diya taki text ache se dikhe */
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: relative;
+ /* Bar ke bahar ka content hide karega */
+}
+
+.skill-bar .skill-per {
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+max-width: 100%;
+  border-radius: 6px;
+ 
+  animation: progress 3s ease-in-out infinite;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden; /* Text bhi starting me hide rahega */
+}
+
+
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    
+    width: 100%; /* Adjust karein bar ki width */
+  }
+}
+
+
