@@ -4,11 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    
-     "postinstall": "npm install",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "vite"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
