@@ -1,89 +1,123 @@
-.about{
+.about {
     display: flex;
     justify-content: center;
-    background: rgb(9, 8, 9);
-    background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important;   
-
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important;
 }
 
-
-.about-header{
- padding: 10px;
-  color: rgb(188, 182, 182);
-  font-weight: 500;
-  text-align: center;
-
-}
-
-.about-content h1{
-   color: rgb(254, 254, 254);
-   font-weight:900;
-   font-size: 2.25rem;
-    letter-spacing: 0.2em;
+.about-content {
+    max-width: 1200px;
+    width: 100%;
     text-align: center;
-    font-variant: inherit;
-    
-    
 }
 
-
-
-
-.about-me{
+.about-header {
     padding: 10px;
-    width: 50%;
-   animation: animate 0.7s ease-in;
+    color: rgb(188, 182, 182);
+    font-weight: 500;
 }
-.about-me p{
-  text-align: left;
+
+.about-content h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* About Me Section */
+.about-me {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    animation: animate 0.7s ease-in;
+}
+
+.about-me p {
+    text-align: left;
     color: rgb(173, 171, 171);
     font-weight: 500;
-    font-size:1rem;
-    
+    font-size: 1rem;
 }
 
+/* Skills Section */
+.skills {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
 
+.skills p {
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+}
 
-@keyframes animate {
-    0%{
-        transform: scale(0.9);
-    } 
-    100%{
-        transform: scale(1);
+.skills p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .skills {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content{
+        padding: 4px;
+    }
+    .about-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-header {
+        font-size: 1rem;
+    }
+
+    .about-me p,
+    .skills p {
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .skills p {
+        padding: 8px 10px;
     }
     
 }
-
-
-
-.content{
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-
-}
-.skills{
-    padding: 50px;
-    height: 500px;
-   width: 50%;  
-}
-.skills p{
-    color: white;
-    font-weight: 500;
-    margin: 5px;
-    width: 6rem;
-    padding: 10px;
-    flex-wrap: wrap;
-   background-color:  rgb(31 41 55 / var(--tw-bg-opacity));
-    --tw-bg-opacity: 1;
-}
-.skills p:hover{
-    color: white;
-    background-color:  rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-
-
-
-
-
