@@ -42,7 +42,7 @@ const About=(()=>{
                 </div>
 
                 <div className="skills">
-                <p type="p" class="btn">HTML5</p>
+                <div><p type="p" class="btn">HTML5</p>
                 <p type="p" class="btn">Css</p>
                 <p type="p" class="btn">JavaScript</p>
                 <p type="p" class="btn">React</p>
@@ -53,7 +53,7 @@ const About=(()=>{
                 <p type="p" class="btn">MySQL</p>
                 <p type="p" class="btn">C</p>
                 <p type="p" class="btn">CPP</p>
-                <p type="p" class="btn">Java</p>
+                <p type="p" class="btn">Java</p></div>
                 </div>
 
              </div>

@@ -24,7 +24,13 @@ const Home = () => {
     <div className="containers">
 
       <div className="sub-container">
-        <div className="content">
+      <div>
+            <h1 style={{ color: "red", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
+                Currently it's not completed. i'm working daily to improve my portfolio.
+            </h1>
+        </div>
+
+        <div className="contents">
          
           <div>
             <h1 className="name">

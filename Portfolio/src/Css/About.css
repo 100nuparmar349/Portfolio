@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+   padding: 10px;
+   width: 100vw;
     background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important;
 }
 
 .about-content {
-    max-width: 1200px;
+    padding: 10px;
     width: 100%;
     text-align: center;
 }
@@ -26,17 +27,12 @@
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+   display: flex;
+  
 }
 
 /* About Me Section */
 .about-me {
-    flex: 1;
-    max-width: 600px;
     padding: 20px;
     animation: animate 0.7s ease-in;
 }
@@ -50,47 +46,50 @@
 
 /* Skills Section */
 .skills {
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    justify-content: center;
+ 
+  padding: 10px;
 }
 
-.skills p {
+
+
+.skills div p { 
+    width: 10rem;
+    margin: 3px;
     color: white;
     font-weight: 500;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     --tw-bg-opacity: 1;
+    
 }
 
-.skills p:hover {
+
+.skills div p:hover {
+    color: white;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 775px) {
+    .about-me{
+        padding: 0px;
+    }
+    .about-me{
+        padding: 2px;
+    }
     .about-content h1 {
         font-size: 1.8rem;
     }
-
+    .about-content p {
+        font-size: 1rem;
+        padding: 5px;
+    }
     .content {
         flex-direction: column;
         align-items: center;
-    }
+        padding: 5px;
 
-    .about-me,
-    .skills {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .skills {
-        justify-content: center;
     }
 }
 
