@@ -7,7 +7,7 @@
 
 /* Background Gradient */
 .containers {
-
+  overflow: hidden;
   background: rgb(9, 8, 9);
   background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important;
   
@@ -85,6 +85,8 @@ nav ul {
 /* Home Page Styling */
 .name {
   display: inline-flex;
+  justify-content: center;
+align-items: center;
 }
 
 .name p {
@@ -109,20 +111,23 @@ nav ul {
 }
 
 .sub-container {
-  padding: 8rem;
+
+  padding: 4rem;
 }
 
 .contents {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 90%;
  
 }
 
 .img img {
-  height: 400px;
-  width: 590px;
+ 
+  height: 18rem;
+  width: 40rem;
+
   margin-right: 15px;
   object-fit: cover;
   border-radius: 100%;
@@ -134,15 +139,26 @@ nav ul {
                
 }
 
+
+
+
+
+
 .code-content {
+  margin-top: 2rem;
   color: white;
-  flex-wrap: wrap;
-  width: 30%;
-  font-size: 1.5rem;
+  letter-spacing: 0.9px;
+  width: 70%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.button{
+  margin-top: 2rem;
+  
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .name p {
 
     font-size: 3rem; /* Adjust font size for smaller screens */
@@ -169,7 +185,7 @@ nav ul {
 
   .code-content {
     width: 100%; /* Increase width for smaller screens */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
     text-align: center;
 
@@ -187,8 +203,8 @@ nav ul {
   }
 
   .img img {
-    height: 250px;
-    width: 250px;
+    height: 10rem;
+    width: 29rem;
   }
 
   .code-content {
@@ -199,6 +215,7 @@ nav ul {
 
 
 .Hire {
+  margin: 0.3rem;
   background: linear-gradient(to right, red 0%, red 50%, white 50%, white 100%);
   background-size: 200% 100%;
   background-position: left;
@@ -254,5 +271,7 @@ max-width: 100%;
     width: 100%; /* Adjust karein bar ki width */
   }
 }
+
+
 
 

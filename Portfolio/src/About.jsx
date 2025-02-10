@@ -42,7 +42,8 @@ const About=(()=>{
                 </div>
 
                 <div className="skills">
-                <div><p type="p" class="btn">HTML5</p>
+                <div>
+               <p type="p" class="btn">HTML5</p>
                 <p type="p" class="btn">Css</p>
                 <p type="p" class="btn">JavaScript</p>
                 <p type="p" class="btn">React</p>

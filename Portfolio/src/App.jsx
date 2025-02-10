@@ -11,6 +11,8 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './Navbar'
 import Home from './Home'
 import About from './About'
+import Contact from './Contact'
+import Project from './Project'
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
+      <Route path="/Project" element={<Project/>}/>
+      <Route path="/Contact" element={<Contact/>}/>
      </Routes>
    
     </div>
