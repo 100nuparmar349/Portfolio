@@ -1,0 +1,224 @@
+
+.main-containers{
+ 
+  height: 100vh;
+    background: rgb(9, 8, 9);
+    background: linear-gradient(90deg, rgba(9, 8, 9, 0.868) 0%, rgba(17, 8, 23, 1) 0%, rgba(145, 0, 255, 1) 0%, rgb(38, 18, 55) 0%, rgb(0, 0, 0) 27%, rgb(0, 0, 0) 100%) !important; 
+ 
+}
+
+
+.sub-containers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Contact{
+    font-weight: 900;
+    color: white;
+    letter-spacing: 0.1rem;
+
+}
+.container-p{
+   border-radius: 19px;
+    width: 600px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    box-shadow:0 10px 10px rgba(0,0,0,0.10);
+    
+}
+.container-p form .tittle{
+    color: #990040;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 0px 0;
+}
+.container-p form .tittle::before{
+    content: ' ';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(to right,#990040 0%,#ff0080 100%);
+
+}
+
+
+.container-p form .input-box{
+    width: 100%;
+    margin-top: 25px;
+   position: relative;
+    text-align: center;
+}
+.container-p form .input-box input{
+    height: 100%;
+    width: 100%;
+   
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+   padding: 20px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+    
+
+}
+.input-box textarea{
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+    
+}
+.input-box textarea:focus,
+.input-box textarea:active{
+    outline: none;
+    border: none;
+}
+.input-box input:focus,
+.input-box input:active {
+  outline: none;
+    /* border: none; */
+    box-shadow: none;
+}
+
+
+
+
+.container-p form .button{
+    margin: 40px 0 20px 0px;
+}
+.container-p form .input-box input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right,#990040 0%,#ff0080 100%);
+    transition: all 0.3s ease;
+
+}
+.container-p form .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left,#990040 0%,#ff0080 100%);
+
+}
+.container-p .option{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.social-buttons{
+    width: 100%;
+    padding: 5px;
+   
+}
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Adds space between buttons */
+    width: 100%;
+}
+
+.social-buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;  /* Makes buttons uniform */
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.social-buttons .button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.social-buttons .linkedin {
+    background: linear-gradient(to right, #0077b5, #005582);
+    box-shadow: 0px 4px 10px rgba(0, 119, 181, 0.3);
+}
+
+.social-buttons .instagram {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0px 4px 10px rgba(255, 48, 108, 0.3);
+}
+
+.social-buttons .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons .button i {
+    font-size: 22px;
+}
+
+
+.submit-button {
+    width: 80%;
+    background: linear-gradient(90deg, #ff0080, #990040);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding:15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 0, 128, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  
+   
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 0, 128, 0.4);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+.submit-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 50%);
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.submit-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
