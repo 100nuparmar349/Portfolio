@@ -1,8 +1,37 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Css/Contact.css'
 import { Link } from 'react-router-dom';
+import axios from "axios"
+ const Contact = () => {
+  const [input, setInput] = useState({
+    name: '',
+    Email: '',
+    message: ''
+  });
 
-const Contact = () => {
+  const handleChange = (e) => {
+    setInput({ ...input, [e.target.name]: e.target.value });
+  };
+
+  const handleClick = async (e) => {
+    e.preventDefault(); 
+    try {
+      let data = await axios.post(
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/contact`,  // ✅ Backend URL from .env
+        input
+      );
+
+    //  let data=await axios.post("http://localhost:4000",input);
+      console.log("Response", data);
+      setInput({ name: "", Email: "", message: "" });
+      alert("Feedback sent successfully");
+    } catch (err) {
+      console.log("Error:",err);
+      alert("Failed");
+    }
+};
+
+  
     return (
     <div className='main-containers'>
       
@@ -11,29 +40,33 @@ const Contact = () => {
         <div><h1 className='Contact'>FEEDBACK</h1></div>
        
         <div class="container-p">
-        <form action="#">
+        <form onSubmit={handleClick}>
            
             <div class="tittle">Hello Buddy</div>
-        
+         
+         {/* Name Input Data */}
             <div class="input-box">
-                <input type="email" placeholder="Enter your Name" required />
+                <input type="text" name="name"  placeholder="Enter your Name" value={input.name} onChange={handleChange} required />
+
                 
             </div>
           
+        {/* Email input Data */}
             <div class="input-box">
-                <input type="email" placeholder="Enter your Email" required />
+                <input type="email" name='Email' value={input.Email} onChange={handleChange} placeholder="Enter your Email" required />
                 
             </div>
           
+          {/* Textarea input Data */}
             <div class="input-box text-area">
-                <textarea placeholder='Enter your Message ...'> </textarea>
+                <textarea name='message' value={input.message} onChange={handleChange} placeholder='Enter your Message ...'> </textarea>
               
                 
             </div>
           
             <div class="input-box button ">
               
-            <button className="submit-button">Submit</button>
+            <button type='submit' className="submit-button ">Submit</button>
 
                
             </div>

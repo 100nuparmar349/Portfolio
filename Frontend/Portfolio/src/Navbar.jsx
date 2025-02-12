@@ -22,7 +22,7 @@ const Navbar=(()=>{
          <li class="nav-item"><Link to="/" className='nav-link active'>Home</Link></li>
         <li class="nav-item"><Link to="/about" className='nav-link '>About</Link></li>
         <li class="nav-item"><Link to="/Project" className='nav-link '>Project</Link></li>
-        <li class="nav-item"><Link to="/Contact" className='nav-link '>Contact</Link></li>
+        <li class="nav-item"><Link to="/contact" className='nav-link '>Contact</Link></li>
       </ul>
     </div>
 
